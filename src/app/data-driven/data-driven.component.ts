@@ -9,14 +9,25 @@ import {FormGroup, FormControl, REACTIVE_FORM_DIRECTIVES, Validators} from "@ang
 })
 export class DataDrivenComponent {
   myForm: FormGroup;
+
+  genders = [
+    'male',
+    'female'
+  ];
+
+
   constructor() {
     this.myForm = new FormGroup({
-      'username': new FormControl('aboily', Validators.required),
-      'email': new FormControl('', [
-        Validators.required,
-        Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
-      ]),
-      'password': new FormControl('', Validators.required)
+      'userData': new FormGroup({
+        'username': new FormControl('aboily', Validators.required),
+        'email': new FormControl('', [
+          Validators.required,
+          Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
+        ]),
+      }),
+
+      'password': new FormControl('', Validators.required),
+      'gender': new FormControl('male')
     });
   }
 

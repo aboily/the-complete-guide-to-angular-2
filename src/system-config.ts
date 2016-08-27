@@ -30,8 +30,12 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
-  'app/template-driven',
-  'app/data-driven',
+  'app/recipes',
+  'app/recipes/recipe-list',
+  'app/recipes/recipe-detail',
+  'app/shopping-list',
+  'app/shopping-list/shopping-list-add',
+  'app/recipes/recipe-edit',
   /** @cli-barrel */
 ];
 

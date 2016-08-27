@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Forms</title>
+  <title>RecipeBook</title>
   <base href="/">
 
   {{#unless environment.production}}
@@ -13,9 +13,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
-  <forms-app>Loading...</forms-app>
+  <recipe-book-app>Loading...</recipe-book-app>
 
-  
+
 
     {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
     <script>
@@ -24,7 +24,7 @@
       }).catch(console.error.bind(console));
     </script>
 
-  
+
 
 
 
